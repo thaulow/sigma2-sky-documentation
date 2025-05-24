@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksigma_2_waldur=self.webpackChunksigma_2_waldur||[]).push([[2774],{7936:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"staff"}')}}]);

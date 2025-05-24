@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksigma_2_waldur=self.webpackChunksigma_2_waldur||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/sigma2-sky-documentation/blog","blogTitle":"Blog","authorsListPath":"/sigma2-sky-documentation/blog/authors"}')}}]);
