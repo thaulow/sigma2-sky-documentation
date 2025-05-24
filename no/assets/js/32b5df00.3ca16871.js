@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksigma_2_waldur=self.webpackChunksigma_2_waldur||[]).push([[1921],{5184:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/docs/no/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
