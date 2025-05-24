@@ -28,20 +28,24 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'no'],
+    localeConfigs: {
+      en: {
+        label: "English",
+        direction: 'ltr',
+      },
+      'no': {
+        label: "Norwegian",
+        direction: 'ltr',
+      },
+    },
   },
 
   presets: [
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/thaulow/sigma2-sky-documentation/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -64,74 +68,230 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'users',
+      path: 'docs-users',
+      routeBasePath: 'users',
+      sidebarPath: require.resolve('./sidebars-users.ts'),
+      includeCurrentVersion: true,
+      lastVersion: 'current',
+      versions: {
+        current: {
+          label: 'latest',
+        },
+      },
+    },
+  ],
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'staff',
+      path: 'docs-staff',
+      routeBasePath: 'staff',
+      sidebarPath: require.resolve('./sidebars-staff.ts'),
+      includeCurrentVersion: true,
+      lastVersion: 'current',
+      versions: {
+        current: {
+          label: 'latest',
+        },
+      },
+    },
+  ],
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'providers',
+      path: 'docs-providers',
+      routeBasePath: 'providers',
+      sidebarPath: require.resolve('./sidebars-providers.ts'),
+      includeCurrentVersion: true,
+      lastVersion: 'current',
+      versions: {
+        current: {
+          label: 'latest',
+        },
+      },
+    },
+  ],
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'calls',
+      path: 'docs-calls',
+      routeBasePath: 'calls',
+      sidebarPath: require.resolve('./sidebars-calls.ts'),
+      includeCurrentVersion: true,
+      lastVersion: 'current',
+      versions: {
+        current: {
+          label: 'latest',
+        },
+      },
+    },
+  ],
+  [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/logo.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json', 
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(0, 132, 153)',
+          },
+        ],
+      },
+    ],
+],
+
+
   themeConfig: {
+    docs: {
+      versionPersistence: 'localStorage',
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: false,
+      },
+    },
+    announcementBar: {
+    id: 'announcement_bar', // A unique id for this bar
+    content:
+      'Under development. More information at <a target="_blank" rel="noopener noreferrer" href="https://sigma2.no">Sigma2 ↗</a>',
+    backgroundColor: '#eee',
+    textColor: '#000',  
+    isCloseable: true, 
+  },
+  
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Sigma2 Sky Documentation',
+      title: '',
       logo: {
         alt: 'Sigma2 Logo',
         src: 'img/logo.svg',
       },
+      
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+        type: 'doc',
+        docId: 'intro',
+        docsPluginId: 'users',
+        label: 'General Users',
+        position: 'left',
+        
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+        type: 'doc',
+        docId: 'intro',
+        docsPluginId: 'providers',
+        label: 'Service Providers',
+        position: 'left',
+        },
+        {
+        type: 'doc',
+        docId: 'intro',
+        docsPluginId: 'calls',
+        label: 'Call Managers',
+        position: 'left',
+        },
+                {
+        type: 'doc',
+        docId: 'intro',
+        docsPluginId: 'staff',
+        label: 'Staff',
+        position: 'left',
+        },
+
+        {
+          type: "localeDropdown",
+          position: "right",
+        },
+        {
+          href: 'https://sky.sigma2.no',
+          label: 'Access Sky',
           position: 'right',
         },
+        {
+          type: 'search',
+          position: 'right',
+        },
+
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
+      logo: {
+        alt: 'Sigma2',
+        src: 'img/logo.png',
+        href: 'https://sigma2.no',
+        width: 160,
+        height: 38,
+      },
       links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'General Users',
+              to: '/users/intro',
+            },
+            {
+              label: 'Service Providers',
+              to: '/providers/intro',
+            },
+            {
+              label: 'Call Managers',
+              to: '/calls/intro',
+            },
+            {
+              label: 'Staff',
+              to: '/staff/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Links',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Sigma2 Sky Login',
+              href: 'https://sky.sigma2.no/',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Sigma2',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Website',
+              to: 'https://sky.sigma2.no/',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'contact@sigma2.no',
+              href: 'mailto:contact@sigma2.no',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Sigma2 AS.`,
     },
     prism: {
       theme: prismThemes.github,

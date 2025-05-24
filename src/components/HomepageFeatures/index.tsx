@@ -2,56 +2,72 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
+
+
 
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'General Users',
+    Svg: require('@site/static/img/users.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Select General Users if you're a researcher, company, or public sector looking to apply for or buy resources or competence.
       </>
     ),
+    link: '/users/intro',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Service Providers',
+    Svg: require('@site/static/img/providers.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Select Service Providers if you are an infrastructure owner looking to offer computing resources or competency to other users
       </>
     ),
+      link: '/providers/intro',
+  },
+    {
+    title: 'Call Managers',
+    Svg: require('@site/static/img/calls.svg').default,
+    description: (
+      <>
+        Select Call Managers if you manage resource calls and are responsible for evaluating applications and selecting recipients.
+      </>
+    ),
+        link: '/calls/intro',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Staff',
+    Svg: require('@site/static/img/staff.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Select Staff if you are a Sigma2 representative or affiliated, responsible for support or development of sky.sigma2.no
       </>
     ),
+        link: '/staff/intro',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description, link}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
+      <Link to={link}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className={clsx('text--center', 'padding-horiz--md', styles.eeeText)}>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
+      </Link>
     </div>
   );
 }

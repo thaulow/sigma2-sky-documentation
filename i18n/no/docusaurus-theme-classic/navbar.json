@@ -1,0 +1,42 @@
+{
+  "title": {
+    "message": "Documentation",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Sigma2 Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.End-Users": {
+    "message": "End-Users",
+    "description": "Navbar item with label End-Users"
+  },
+  "item.label.Service Providers": {
+    "message": "Service Providers",
+    "description": "Navbar item with label Service Providers"
+  },
+  "item.label.Call Managers": {
+    "message": "Call Managers",
+    "description": "Navbar item with label Call Managers"
+  },
+  "item.label.Staff": {
+    "message": "Staff",
+    "description": "Navbar item with label Staff"
+  },
+  "item.label.1.0.0": {
+    "message": "1.0.0",
+    "description": "Navbar item with label 1.0.0"
+  },
+  "item.label.Sky login": {
+    "message": "Sky login",
+    "description": "Navbar item with label Sky login"
+  },
+  "item.label.Next(1.0.1)": {
+    "message": "Next(1.0.1)",
+    "description": "Navbar item with label Next(1.0.1)"
+  },
+  "item.label.All Version": {
+    "message": "All Version",
+    "description": "Navbar item with label All Version"
+  }
+}

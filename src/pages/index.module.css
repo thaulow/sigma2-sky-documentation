@@ -21,3 +21,8 @@
   align-items: center;
   justify-content: center;
 }
+.indexCtas a:last-of-type {
+  margin: 20px 36px;
+  background-color: #02758d;
+  border-color: #fff;
+}

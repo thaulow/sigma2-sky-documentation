@@ -1,0 +1,72 @@
+{
+  "short_name": "Sigma2 Sky",
+  "name": "Sigma2 Sky",
+  "icons": [
+    {
+      "src": "/images/icons-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#008499",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#008499",
+  "shortcuts": [
+    {
+      "name": "General Users",
+      "short_name": "Users",
+      "description": "View general users documentation",
+      "url": "//users/latest/intro",
+      "icons": [{ "src": "/images/users.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Service Providers",
+      "short_name": "Providers",
+      "description": "View service provider documentation",
+      "url": "/providers/latest/intro",
+      "icons": [{ "src": "/images/providers.png", "sizes": "192x192" }]
+    },    
+    {
+      "name": "Call Manager",
+      "short_name": "Calls",
+      "description": "View call manager documentation",
+      "url": "/calls/latest/intro",
+      "icons": [{ "src": "/images/calls.png", "sizes": "192x192" }]
+    },
+        {
+      "name": "Staff",
+      "short_name": "Staff",
+      "description": "View staff documentation",
+      "url": "/staff/latest/intro",
+      "icons": [{ "src": "/images/staff.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Sigma2 Documentation",
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshot2.jpg",
+      "type": "image/jpg",
+      "sizes": "720x540",
+      "form_factor": "wide"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "usersSidebar": [
+    {
+      "type": "doc",
+      "id": "intro",
+      "label": "Welcome"
+    }
+  ]
+}

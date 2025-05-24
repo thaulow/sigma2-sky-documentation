@@ -1,0 +1,46 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Links": {
+    "message": "Links",
+    "description": "The title of the footer links column with title=Links in the footer"
+  },
+  "link.title.Sigma2": {
+    "message": "Sigma2",
+    "description": "The title of the footer links column with title=Sigma2 in the footer"
+  },
+  "link.item.label.End-Users": {
+    "message": "End-Users",
+    "description": "The label of footer link with label=End-Users linking to /docs/intro"
+  },
+  "link.item.label.Service Providers": {
+    "message": "Service Providers",
+    "description": "The label of footer link with label=Service Providers linking to /docs/intro"
+  },
+  "link.item.label.Call Managers": {
+    "message": "Call Managers",
+    "description": "The label of footer link with label=Call Managers linking to /docs/intro"
+  },
+  "link.item.label.Staff": {
+    "message": "Staff",
+    "description": "The label of footer link with label=Staff linking to /docs/intro"
+  },
+  "link.item.label.Sigma2 Sky Login": {
+    "message": "Sigma2 Sky Login",
+    "description": "The label of footer link with label=Sigma2 Sky Login linking to https://sky.sigma2.no/"
+  },
+  "link.item.label.Website": {
+    "message": "Website",
+    "description": "The label of footer link with label=Website linking to https://sky.sigma2.no/"
+  },
+  "link.item.label.contact@sigma2.no": {
+    "message": "contact@sigma2.no",
+    "description": "The label of footer link with label=contact@sigma2.no linking to mailto:contact@sigma2.no"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Sigma2 AS.",
+    "description": "The footer copyright"
+  }
+}
