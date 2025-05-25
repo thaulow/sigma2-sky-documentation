@@ -1,9 +1,9 @@
 ---
 slug: /
 id: intro
-title: Welcome Users
+title: Introduction
 ---
 
-# Welcome, Users
+# Introduction
 
 This section is for end users of Sigma2 Sky.

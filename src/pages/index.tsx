@@ -25,7 +25,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.indexCtas}>
           <Link className="button button--secondary button--lg"
-          to="/users/latest/intro">
+          to="/users/">
           Getting started </Link>
           <Link className="button button--info button--lg"
           to="https://sky.sigma2.no" target="_blank" rel="noopener noreferrer"> Access Sky ↗ </Link>

@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
         Select General Users if you're a researcher, company, or public sector looking to apply for or buy resources or competence.
       </>
     ),
-    link: '/users/intro',
+    link: '/users/',
   },
   {
     title: 'Service Providers',
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
         Select Service Providers if you are an infrastructure owner looking to offer computing resources or competency to other users
       </>
     ),
-      link: '/providers/intro',
+      link: '/providers/',
   },
     {
     title: 'Call Managers',
@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
         Select Call Managers if you manage resource calls and are responsible for evaluating applications and selecting recipients.
       </>
     ),
-        link: '/calls/intro',
+        link: '/calls/',
   },
   {
     title: 'Staff',
@@ -52,7 +52,7 @@ const FeatureList: FeatureItem[] = [
         Select Staff if you are a Sigma2 representative or affiliated, responsible for support or development of sky.sigma2.no
       </>
     ),
-        link: '/staff/intro',
+        link: '/staff/',
   },
 ];
 

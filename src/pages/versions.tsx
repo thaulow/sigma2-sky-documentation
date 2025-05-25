@@ -14,7 +14,7 @@ export default function Versions(): JSX.Element {
         <div className="margin-top--lg">
           <h2>Current version (stable)</h2>
           <p>
-            <Link to={`/users/intro`}>{latestVersion}</Link>
+            <Link to={`/users/`}>{latestVersion}</Link>
           </p>
         </div>
 
@@ -24,7 +24,7 @@ export default function Versions(): JSX.Element {
             <ul>
               {versions.slice(1).map((version) => (
                 <li key={version}>
-                  <Link to={`/users/${version}/intro`}>{version}</Link>
+                  <Link to={`/users/${version}`}>{version}</Link>
                 </li>
               ))}
             </ul>

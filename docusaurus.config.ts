@@ -55,7 +55,9 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/thaulow/sigma2-sky-documentation/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/thaulow/sigma2-sky-documentation/edit/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -80,9 +82,13 @@ const config: Config = {
       lastVersion: 'current',
       versions: {
         current: {
-          label: 'latest',
+          label: '1.0.0',
         },
       },
+                editUrl:
+            'https://github.com/thaulow/sigma2-sky-documentation/edit/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
     },
   ],
   [
@@ -96,9 +102,13 @@ const config: Config = {
       lastVersion: 'current',
       versions: {
         current: {
-          label: 'latest',
+          label: '1.0.0',
         },
       },
+                editUrl:
+            'https://github.com/thaulow/sigma2-sky-documentation/edit/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
     },
   ],
   [
@@ -112,9 +122,13 @@ const config: Config = {
       lastVersion: 'current',
       versions: {
         current: {
-          label: 'latest',
+          label: '1.0.0',
         },
       },
+                editUrl:
+            'https://github.com/thaulow/sigma2-sky-documentation/edit/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
     },
   ],
   [
@@ -128,9 +142,13 @@ const config: Config = {
       lastVersion: 'current',
       versions: {
         current: {
-          label: 'latest',
+          label: '1.0.0',
         },
       },
+                editUrl:
+            'https://github.com/thaulow/sigma2-sky-documentation/edit/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
     },
   ],
   [
@@ -171,6 +189,7 @@ const config: Config = {
         hideable: true,
         autoCollapseCategories: false,
       },
+      
     },
     announcementBar: {
     id: 'announcement_bar', // A unique id for this bar
@@ -252,19 +271,19 @@ const config: Config = {
           items: [
             {
               label: 'General Users',
-              to: '/users/intro',
+              to: '/users/',
             },
             {
               label: 'Service Providers',
-              to: '/providers/intro',
+              to: '/providers/',
             },
             {
               label: 'Call Managers',
-              to: '/calls/intro',
+              to: '/calls/',
             },
             {
               label: 'Staff',
-              to: '/staff/intro',
+              to: '/staff/',
             },
           ],
         },
