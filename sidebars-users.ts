@@ -20,11 +20,11 @@ export default {
       items: [
         {
           type: 'category',
-          label: '1. Register account',
+          label: '1. Account setup',
           link: {
             type: 'generated-index',
-            title: 'Register account',
-            description: 'This section describes how to register as an academic, SME or public sector user',
+            title: 'Account registration',
+            description: 'To register, you must sign in using either a national identity provider or an academic provider. If you are a student or researcher, in Norway or abroad, select 1a. Academic User. If you represent a company or public sector, select 1b. Business/Public Sector.',
             slug: '/registration/',
             keywords: ['registration'],
             image: '/img/logo.png',
@@ -34,20 +34,41 @@ export default {
             {
               type: 'doc',
               id: 'get-started/myaccessid',
-              label: '1A. Academic User',
+              label: '1a - Academic User',
             },
             {
               type: 'doc',
               id: 'get-started/bankid',
-              label: '1B. SME/Public Sector',
+              label: '1b - Business/Public Sector',
             },
           ],
         },
                 {
-        type: 'doc',
-        id: 'get-started/affiliation',
-        label: '2. Affiliation',
+          type: 'category',
+          label: '2. Affiliation',
+          link: {
+            type: 'generated-index',
+            title: 'Affiliation',
+            description: 'Resources can only be purchased through organizations. This step explains how to join existing organizations or creating a new one',
+            slug: '/affiliation/',
+            keywords: ['affiliation'],
+            image: '/img/logo.png',
+          },
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              id: 'get-started/join-org',
+              label: '2a - Join an organization',
+            },
+            {
+              type: 'doc',
+              id: 'get-started/create-org',
+              label: '2b - Create an organization',
+            },
+          ],
         },
+
 
       ],
     },

@@ -4,11 +4,10 @@ id: intro
 title: Terminology
 ---
 
-### User accounts
+### User accounts 
 Accounts in Sigma Sky represents a real individual. As a user, you manage your own identity and credentials.  
 - You can be invited to join one or more organizations, allowing you to act on behalf of those organizations. 
 - Individual users may apply for free resources through open calls. However, purchasing resources requires affiliation with an organization. 
-
 
 ### Organizations
 An organization represents a legal entity responsible for billing and management of projects including their cost, members and policies. 
