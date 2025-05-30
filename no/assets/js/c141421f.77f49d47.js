@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksigma_2_waldur=self.webpackChunksigma_2_waldur||[]).push([[957],{936:a=>{a.exports=JSON.parse('{"name":"docusaurus-theme-search-algolia","id":"default"}')}}]);

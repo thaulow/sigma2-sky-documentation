@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksigma_2_waldur=self.webpackChunksigma_2_waldur||[]).push([[1809],{1809:(s,a,u)=>{u.r(a)}}]);

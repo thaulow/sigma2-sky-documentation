@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksigma_2_waldur=self.webpackChunksigma_2_waldur||[]).push([[8158],{8158:(a,s,e)=>{e.r(s),e.d(s,{DocSearchModal:()=>r.a1});var r=e(5600)}}]);
