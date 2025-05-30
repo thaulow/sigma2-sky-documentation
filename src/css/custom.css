@@ -36,3 +36,9 @@
     position: relative;
     overflow: hidden;
 }
+.navbar-access-sky {
+    background-color: var(--ifm-font-color-base);
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 10px;
+}
